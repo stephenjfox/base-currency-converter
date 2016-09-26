@@ -1,0 +1,11 @@
+<resources>
+  <string name="app_name">SimpleCurrencyConverter</string>
+  <string name="converter_greeting">What\'s USD in SKW?</string>
+  <string name="converter_greeting_subtitle">(or vice verse)</string>
+  <string name="the_currency_converter_greeting">Explaining what currencies we\'ll be converting</string>
+  <string name="label_edit_hint">Edit me</string>
+  <string name="usd_label_description">The label showing USD</string>
+  <string name="ko_label_text">KRW</string>
+  <string name="us_label_text">USD</string>
+  <string name="convert_button_text">Convert</string>
+</resources>

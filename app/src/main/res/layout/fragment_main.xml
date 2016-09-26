@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_marginEnd="16dp"
+  android:layout_marginStart="16dp"
+  android:layout_marginTop="16dp"
+  android:layout_marginBottom="16dp">
+
+
+  <TextView
+    android:id="@+id/greetingLabel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/converter_greeting"
+    android:layout_marginTop="36dp"
+    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+    android:fontFamily="sans-serif"
+    android:textSize="30sp"
+    android:contentDescription="@string/the_currency_converter_greeting"
+    android:textAlignment="center"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true" />
+
+  <TextView
+    android:text="@string/converter_greeting_subtitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/greetingLabel"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="24dp"
+    android:id="@+id/greetingSubtitleLabel" />
+
+  <Spinner
+    android:text="@string/ko_label_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/usLabel"
+    android:layout_alignStart="@+id/usLabel"
+    android:layout_marginTop="40dp"
+    android:id="@+id/koLabel"
+    tools:text="SKW"
+    android:textAppearance="@android:style/TextAppearance.Material.Large"
+    android:labelFor="@+id/koInput" />
+
+  <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="numberDecimal"
+    android:ems="10"
+    android:layout_above="@+id/koLabel"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/usInput"
+    android:textAlignment="center"
+    android:maxLines="1"
+    android:selectAllOnFocus="true"
+    android:layout_toEndOf="@+id/usLabel" />
+
+  <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="numberDecimal"
+    android:ems="10"
+    android:id="@+id/koInput"
+    android:layout_alignBottom="@+id/koLabel"
+    android:layout_alignParentEnd="true"
+    android:textAlignment="center"
+    android:maxLines="1"
+    android:selectAllOnFocus="true"
+    android:layout_toEndOf="@+id/koLabel" />
+
+  <Spinner
+    android:text="@string/us_label_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="64dp"
+    android:id="@+id/usLabel"
+    tools:text="USD"
+    android:contentDescription="@string/usd_label_description"
+    android:textAppearance="@android:style/TextAppearance.Material.Large"
+    android:layout_below="@+id/greetingSubtitleLabel"
+    android:layout_toStartOf="@+id/greetingSubtitleLabel"
+    android:labelFor="@+id/usInput" />
+
+  <Button
+    android:text="@string/convert_button_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/koLabel"
+    android:layout_alignEnd="@+id/greetingSubtitleLabel"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="38dp"
+    android:id="@+id/updateButton" />
+
+</RelativeLayout>
